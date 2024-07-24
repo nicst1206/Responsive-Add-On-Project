@@ -5,11 +5,17 @@
 h1 {
   font-family: var(--basic-font);
   font-weight: 900;
-  font-size: 96px;
+  font-size: 128px;
   font-style: normal;
   color: blue;
 }
 
 h2 {
   font-family: var(--basic-font);
+  font-size: 40px;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
