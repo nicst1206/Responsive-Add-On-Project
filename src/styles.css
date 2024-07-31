@@ -63,7 +63,36 @@ header a {
 section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 0 0 30px;
+  padding: 100px 30px;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.6;
+  font-weight: 700;
+}
+
+main h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+main p {
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.beam-image {
+  max-width: 100%;
 }
 
 footer {
@@ -73,7 +102,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 40px 0;
   margin: 0 auto;
 }
 
@@ -109,8 +137,15 @@ footer p {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col-1-narrow {
+  grid-template-columns: 2fr 3fr 3fr;
 }
 
 @media (max-width: 960px) {
@@ -132,5 +167,19 @@ footer p {
 
   header a {
     padding: 12px 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  main h3 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
