@@ -105,12 +105,12 @@ footer p {
   line-height: 24px;
   letter-spacing: 1px;
   opacity: 0.8;
-  margin-right: 20px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
+  grid-gap: 64px;
 }
 
 @media (max-width: 960px) {
